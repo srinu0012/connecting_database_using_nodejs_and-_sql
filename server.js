@@ -1,18 +1,19 @@
 const express=require("express")
-
+const cors=require("cors")
 
 const server=express()
 
 const db=require("./db")
 
 server.use(express.json())
+server.use(cors())
 
 server.listen(4003,()=>{
     console.log("server started")
 })
 server.get("/movies",(req,res)=>{
     db.getmovie().then((data)=>{
-        console.log(...data)
+        
        res.send(data)
      
    

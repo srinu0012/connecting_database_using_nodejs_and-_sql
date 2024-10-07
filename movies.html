@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: azure;
 }
 
 body {
@@ -41,35 +42,50 @@ body {
 }
 
 .glass-box {
+    min-width: 500px;
     margin-top: 50px;
     padding: 40px;
-    width: 300px;
+   
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
+    overflow-y: scroll;
 }
 
 .glass-box h2 {
+
     margin-bottom: 15px;
     font-size: 24px;
 }
 
-.glass-box p {
-    font-size: 16px;
-    color: #f0f0f0;
+.glass-box div {
+  min-width: 500px;
+   height: 200px;
+}
+table,th,td{
+    border: 2px solid #00c6ff;
 }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <button class="get-movies-btn">GetMovies</button>
+        <button class="get-movies-btn" id="button">GetMovies</button>
         <div class="glass-box">
-            <h2 id="button">Movie Details</h2>
-            <p>Click "GetMovies" to fetch the latest movies.</p>
+            <h2 >Movie Details</h2>
+            <div >
+                <table  id="tab">
+                    <tr>
+                        <th>S.no</th>
+                        <th>Movie</th>
+                        <th>budget</th>
+                        <th>director</th>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
