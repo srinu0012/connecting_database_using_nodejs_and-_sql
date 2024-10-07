@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.get-movies-btn {
+    background-color: #00c6ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.get-movies-btn:hover {
+    transform: scale(1.1);
+}
+
+.glass-box {
+    margin-top: 50px;
+    padding: 40px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+}
+
+.glass-box h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.glass-box p {
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="get-movies-btn">GetMovies</button>
+        <div class="glass-box">
+            <h2 id="button">Movie Details</h2>
+            <p>Click "GetMovies" to fetch the latest movies.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
