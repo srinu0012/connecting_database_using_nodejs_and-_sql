@@ -15,7 +15,7 @@ function getmovie(){
             }else{
                 re(rows)
             }
-            db.end()
+            // db.end()
         })
     })
 }
